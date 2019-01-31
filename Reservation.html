@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Foodcss.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar black card">
+    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="bar-item button padding-large">HOME</a>
+    
+    <div class="dropdown-hover hide-small">
+      <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="dropdown-content bar-block card-4">
+        <a href="delivery.html" class="bar-item button">Delivery</a>
+        <a href="Reservation.html" class="bar-item button">Reservation</a>
+        <a href="#" class="bar-item button">Member Offer</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="padding-large hover-red hide-small right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+
+<!-- Page content -->
+<div class="content" style="max-width:2000px;margin-top:46px">
+
+ 
+
+  
+  
+
+  <!-- The Contact Section -->
+  <div class="container content padding-64" style="max-width:800px" id="contact">
+    <h2 class="wide center">RESERVATION</h2>
+    <p class="opacity center"><i>Please fill up your information to reserve</i></p>
+    <div class="row padding-32">
+      
+      <div class="col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="row-padding" style="margin:0 -16px 8px -16px">
+            <div class="half">
+              <input class="input border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="half">
+              <input class="input border" type="text" placeholder="Email" required name="Email">
+            </div>
+              <div class="half">
+              <input class="input border" type="text" placeholder="Phone Number" required name="Phone Number">
+            </div>
+            <div class="half">
+              <input class="input border" type="text" placeholder="Date" required name="Date">
+            </div>
+          </div>
+          <input class="input border" type="text" placeholder="Message" required name="Message">
+          <button class="button black section right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="image greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="container padding-64 center opacity light-grey xlarge">
+  <i class="fa fa-facebook-official hover-opacity"></i>
+  <i class="fa fa-instagram hover-opacity"></i>
+  <i class="fa fa-snapchat hover-opacity"></i>
+  <i class="fa fa-pinterest-p hover-opacity"></i>
+  <i class="fa fa-twitter hover-opacity"></i>
+  <i class="fa fa-linkedin hover-opacity"></i>
+  
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+  } else { 
+    x.className = x.className.replace(" show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
